@@ -5,6 +5,5 @@
   The goal is to fill the empty cells (represented by 0) in the grid such that all the above rules are satisfied.
 
 
-# Algorithm Used
- # Backtracking
+# Algorithm Used : Backtracking
     A recursive algorithm that tries to build a solution incrementally. If it encounters a situation where no valid move can be made, it backtracks by undoing the last move and trying a different option.
