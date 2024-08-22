@@ -4,13 +4,13 @@ using namespace std;
 #define N 9
 
 void getUserInput(int board[N][N]) {
-    cout << "Enter the Sudoku grid (use 0 for empty cells):\n";
-    cout << "You can skip any entry by pressing 'Enter' \n";
+    cout <<"Enter the Sudoku grid (use 0 for empty cells):\n";
+    cout <<"You can skip any entry by pressing 'Enter' \n";
 
     for (int row = 0; row < N; row++) {
         for (int col = 0; col < N; col++) {
             int input;
-            cout << "Enter value for cell [" << row + 1 << "][" << col + 1 << "] (Current: " << board[row][col] << "): ";
+            cout <<"Enter value for cell [" << row + 1 << "][" << col + 1 << "] (Current: " << board[row][col] << "): ";
             cin >> input;
 
             
@@ -19,7 +19,7 @@ void getUserInput(int board[N][N]) {
                     board[row][col] = input;
                 }
             } else {
-                cout << "Invalid input! Please enter a number between 0 and 9.\n";
+                cout <<"Invalid input! Please enter a number between 0 and 9.\n";
                 col--; 
             }
         }
@@ -142,9 +142,9 @@ int main() {
         if (solveSudoku(board))
             printBoard(board);
         else
-            cout << "No solution exists" << endl;
+            cout <<"No solution exists"<< endl;
     } else {
-        cout << "Your Sudoku is not correctly formed, It is incorrect." << endl;
+        cout <<"Your Sudoku is not correctly formed, It is incorrect."<< endl;
     }
 
     return 0;
